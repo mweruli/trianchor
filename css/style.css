@@ -1363,7 +1363,20 @@ i:before {
 .contact_us_form .form-group {
   margin-bottom: 5px;
 }
-
+.contact_us_form .form-group label {
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #e1e1e1;
+  border-radius: 0px;
+  padding: 0px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: #a5bbd0;
+}
 .contact_us_form .form-group input {
   height: 50px;
   border: none;

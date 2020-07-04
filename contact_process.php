@@ -1,19 +1,20 @@
 <?php
 
-    $to = "rockybd1995@gmail.com";
+    $to = "info@mymechanickenya.co.ke";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
-    $subject = $_REQUEST['subject'];
+    $csubject = $_REQUEST['subject'];
     $number = $_REQUEST['number'];
     $cmessage = $_REQUEST['message'];
-
+    $dropdown = $_REQUEST['dropdown'];
+    
     $headers = "From: $from";
 	$headers = "From: " . $from . "\r\n";
 	$headers .= "Reply-To: ". $from . "\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from your Sierra.";
+    $subject = "You have a message from your Trianchor.";
 
     $logo = '#';
     $link = '#';
@@ -28,6 +29,8 @@
 	$body .= "</tr>";
 	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
 	$body .= "<tr><td></td></tr>";
+	$body .= "<tr><td colspan='2' style='border:none;'><strong>Phone Number:</strong> {$number}</td></tr>";
+	$body .= "<tr><td colspan='2' style='border:none;'><strong>Area of need:</strong> {$dropdown}</td></tr>";
 	$body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
